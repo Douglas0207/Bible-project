@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bible Verses</title>
+</head>
+<body class="bg-gray-100 flex flex-col items-start justify-top min-h-screen p-2">
+
+  <!-- Header Section -->
+  <div class="bg-[#0e263d] w-full p-5 flex items-center">
+    <img src="pngtree-holy-glowing-light-christian-cross-design-png-image_9118233-fotor-bg-remover-20250224211416.png" width="30px" height="30px">
+    <h1 class="text-white font-serif font-bold p-1 ml-2">Bible Verses For Every Emotion</h1>
+  </div>
+
+  <!-- New Text Before Button -->
+  <p class="mt-6 text-gray-700 text-lg">When you are confused</p>
+
+  <!-- Click Me Button -->
+  <button id="showCardBtn" class="mt-2 bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 transition">
+    Click Me
+  </button>
+
+  <!-- Card (Initially Hidden) -->
+  <div id="verseCard" class="mt-4 max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-6 hidden">
+    <div class="py-4">
+      <h2 class="text-xl font-semibold text-gray-800">Jeremiah 29:11</h2>
+      <p class="text-gray-600 mt-2">"For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future."</p>
+    </div>
+    <div class="mt-4">
+      <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">
+        Get Another Verse
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript to Toggle Visibility -->
+  <script>
+    document.getElementById("showCardBtn").addEventListener("click", function() {
+      document.getElementById("verseCard").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
